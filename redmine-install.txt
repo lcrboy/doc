@@ -1,0 +1,35 @@
+
+1、Mysql安装
+
+# sudo apt-get  install mysql-server-5.1
+
+2、变更Mysql服务器设定
+
+# sudo vi /etc/mysql/my.cnf
+
+[mysqld] 段下，加入
+
+default-character-set = utf8
+
+3、Redmine安装
+
+# sudo apt-get install redmine redmine-mysql
+
+4、Apache安装及设定
+
+# sudo apt-get install apache libapache-ruby1.8 apache2-mpm-worker libapache2-mod-passenger
+
+/etc/apache2/conf.d 目录下，建立文件：
+
+# sudo vi redmine.conf
+
+RailsEnv production
+
+RailsBaseURI /redmine
+5、建立目录链接
+#  sudo ln -s /usr/share/redmine/public /var/www/redmine
+
+6、重启Apache2服务
+# sudo service apache2 restart
+
+完毕，采用 http://*.*.*.*/redmine 进行访问。
