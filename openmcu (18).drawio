@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-19T08:43:56.822Z" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="-ZxmD3_HZJOiGDGhYZH6" version="12.7.1" type="github" pages="4">
+<mxfile host="www.draw.io" modified="2020-02-19T08:51:27.935Z" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="FdirSvTiGBYDGrND9pIf" version="12.7.1" type="github" pages="4">
   <diagram name="HTTPProcess" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1988" dy="1519" grid="1" gridSize="12" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -2374,6 +2374,19 @@
             <mxPoint x="450" y="2003.14" as="sourcePoint" />
             <mxPoint x="-160" y="2023" as="targetPoint" />
             <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qpYM5qdmsmnHS61fDKE2-0" value=":Registrar" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="TSLSOdOghNTNqaenQG0N-1">
+          <mxGeometry x="-1010" y="400" width="100" height="2330" as="geometry" />
+        </mxCell>
+        <mxCell id="qpYM5qdmsmnHS61fDKE2-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qpYM5qdmsmnHS61fDKE2-0">
+          <mxGeometry x="45" y="1975" width="15" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qpYM5qdmsmnHS61fDKE2-7" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.9;exitY=0.711;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="TSLSOdOghNTNqaenQG0N-1" source="vHHz5DXxY8OUEVHoUqqC-78" target="qpYM5qdmsmnHS61fDKE2-0">
+          <mxGeometry x="0.0961" y="-14" width="80" relative="1" as="geometry">
+            <mxPoint x="-710" y="2420" as="sourcePoint" />
+            <mxPoint x="-640" y="2420" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
