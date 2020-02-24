@@ -1,20 +1,20 @@
-<mxfile host="www.draw.io" modified="2020-02-24T09:39:32.213Z" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="tj-Be0niRGs-i0vSvuab" version="12.7.4" type="github">
+<mxfile host="www.draw.io" modified="2020-02-24T09:46:17.766Z" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="-KfBZND-x3CZhBQGdTGW" version="12.7.4" type="github">
   <diagram name="Notify" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="507" dy="410" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="r_RuZCsNWrJx2enIbLrj-1" value="PNotifierFunction" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="450" y="610" width="320" height="140" as="geometry" />
+          <mxGeometry x="450" y="610" width="320" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="r_RuZCsNWrJx2enIbLrj-2" value="* void * object" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="r_RuZCsNWrJx2enIbLrj-1">
+        <mxCell id="r_RuZCsNWrJx2enIbLrj-2" value="# void * object" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="r_RuZCsNWrJx2enIbLrj-1">
           <mxGeometry y="26" width="320" height="26" as="geometry" />
         </mxCell>
         <mxCell id="r_RuZCsNWrJx2enIbLrj-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="r_RuZCsNWrJx2enIbLrj-1">
           <mxGeometry y="52" width="320" height="8" as="geometry" />
         </mxCell>
         <mxCell id="r_RuZCsNWrJx2enIbLrj-4" value="+ virtual void Call(PObject &amp; notifier, INT extra) const = 0;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="r_RuZCsNWrJx2enIbLrj-1">
-          <mxGeometry y="60" width="320" height="80" as="geometry" />
+          <mxGeometry y="60" width="320" height="40" as="geometry" />
         </mxCell>
         <mxCell id="r_RuZCsNWrJx2enIbLrj-5" value="PSmartObject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="470" y="420" width="160" height="86" as="geometry" />
@@ -32,6 +32,24 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="530" y="450" as="sourcePoint" />
             <mxPoint x="530" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r_RuZCsNWrJx2enIbLrj-10" value="OnLoadPlugin_PNotifier" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="760" width="390" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="r_RuZCsNWrJx2enIbLrj-11" value="+ friend class OnLoadPlugin_PNotifier" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="r_RuZCsNWrJx2enIbLrj-10">
+          <mxGeometry y="26" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="r_RuZCsNWrJx2enIbLrj-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="r_RuZCsNWrJx2enIbLrj-10">
+          <mxGeometry y="52" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="r_RuZCsNWrJx2enIbLrj-13" value="+ virtual void Call(PObject &amp; note, INT extra) const&#xa;+ virtual void OnLoadPlugin(notifier &amp; note, INT extra)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="r_RuZCsNWrJx2enIbLrj-10">
+          <mxGeometry y="60" width="390" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="r_RuZCsNWrJx2enIbLrj-14" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;" edge="1" parent="1" source="r_RuZCsNWrJx2enIbLrj-10" target="r_RuZCsNWrJx2enIbLrj-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="565" y="600" as="sourcePoint" />
+            <mxPoint x="565" y="600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
