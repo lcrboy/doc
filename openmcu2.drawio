@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-25T11:37:07.936Z" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="Gem0D_i0lBH8yIMewpqL" version="12.7.4" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-25T11:59:55.982Z" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="LmhGdKW7KfsZ8RdfdvdQ" version="12.7.4" type="github" pages="2">
   <diagram name="Notify" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="1715" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -735,10 +735,10 @@
           <mxGeometry x="75" y="140" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-9" value="H323_RTPChannel" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-1">
-          <mxGeometry x="420" y="70" width="120" height="300" as="geometry" />
+          <mxGeometry x="420" y="70" width="120" height="590" as="geometry" />
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-9">
-          <mxGeometry x="55" y="110" width="10" height="80" as="geometry" />
+          <mxGeometry x="55" y="110" width="10" height="420" as="geometry" />
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-12" value="H323VideoCodec" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-1">
           <mxGeometry x="630" y="70" width="100" height="620" as="geometry" />
@@ -776,10 +776,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-18" value="MCUH323Connection" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-1">
-          <mxGeometry x="850" y="70" width="130" height="460" as="geometry" />
+          <mxGeometry x="850" y="70" width="130" height="600" as="geometry" />
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-18">
-          <mxGeometry x="60" y="140" width="10" height="320" as="geometry" />
+          <mxGeometry x="60" y="140" width="10" height="460" as="geometry" />
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-26" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="2EMGZGDTi3uroBsRNV49-18">
           <mxGeometry x="0.3333" y="-20" width="80" relative="1" as="geometry">
@@ -852,6 +852,18 @@
         <mxCell id="2EMGZGDTi3uroBsRNV49-40" value="codec-&amp;gt;AttachChannel(channel)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="2EMGZGDTi3uroBsRNV49-39">
           <mxGeometry x="0.1071" y="-1" relative="1" as="geometry">
             <mxPoint x="7.5" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-113" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="2EMGZGDTi3uroBsRNV49-18" target="2EMGZGDTi3uroBsRNV49-114">
+          <mxGeometry x="0.1034" y="-60" width="80" relative="1" as="geometry">
+            <mxPoint x="70" y="550" as="sourcePoint" />
+            <mxPoint x="220" y="550" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-115" value="ep.OnStartLogicalChannel(...)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="2EMGZGDTi3uroBsRNV49-113">
+          <mxGeometry x="-0.2299" y="1" relative="1" as="geometry">
+            <mxPoint x="9.17" y="-10" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-20" value="dispatch" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;" edge="1" target="2EMGZGDTi3uroBsRNV49-19" parent="2EMGZGDTi3uroBsRNV49-1">
@@ -1069,22 +1081,70 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-94" value="H323Codec" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-1">
-          <mxGeometry x="1630" y="100" width="200" height="164" as="geometry" />
+          <mxGeometry x="1610" y="100" width="240" height="164" as="geometry" />
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-95" value="# PChannel * rawDataChannel;&#xa;# H323Channel * logicalChannel;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-94">
-          <mxGeometry y="26" width="200" height="54" as="geometry" />
+          <mxGeometry y="26" width="240" height="54" as="geometry" />
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-96" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-94">
-          <mxGeometry y="80" width="200" height="58" as="geometry" />
+          <mxGeometry y="80" width="240" height="58" as="geometry" />
         </mxCell>
-        <mxCell id="2EMGZGDTi3uroBsRNV49-97" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-94">
-          <mxGeometry y="138" width="200" height="26" as="geometry" />
+        <mxCell id="2EMGZGDTi3uroBsRNV49-97" value="+ AttachChannel(PChannel * channel, ..)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-94">
+          <mxGeometry y="138" width="240" height="26" as="geometry" />
         </mxCell>
         <mxCell id="2EMGZGDTi3uroBsRNV49-98" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" edge="1" parent="2EMGZGDTi3uroBsRNV49-1" source="2EMGZGDTi3uroBsRNV49-95">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1800" y="149" as="sourcePoint" />
             <mxPoint x="1900" y="149" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-101" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="2EMGZGDTi3uroBsRNV49-1" target="2EMGZGDTi3uroBsRNV49-18">
+          <mxGeometry x="0.0587" y="-30" width="80" relative="1" as="geometry">
+            <mxPoint x="484" y="581" as="sourcePoint" />
+            <mxPoint x="560" y="580" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-102" value="connection-&amp;gt;OnStartLogicalChannel()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="2EMGZGDTi3uroBsRNV49-101">
+          <mxGeometry x="-0.1484" y="2" relative="1" as="geometry">
+            <mxPoint x="5" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-103" value="MCUH323Connection" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-1">
+          <mxGeometry x="1430" y="741" width="390" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-104" value="# MCUH323EndPoint &amp; ep;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-103">
+          <mxGeometry y="26" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-105" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-103">
+          <mxGeometry y="52" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-106" value="+ virtual BOOL OnStartLogicalChannel(H323Channel &amp; channel);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-103">
+          <mxGeometry y="60" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-107" value="H323EndPoint" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-1">
+          <mxGeometry x="1465" y="900" width="320" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-108" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-107">
+          <mxGeometry y="26" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-109" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-107">
+          <mxGeometry y="52" width="320" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-110" value="+ virtual BOOL OnStartLogicalChannel(&#xa;      H323Connection &amp; connection,    ///&lt; Connection for the channel&#xa;      H323Channel &amp; channel           ///&lt; Channel being started&#xa;    );&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-107">
+          <mxGeometry y="60" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-111" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0.516;exitY=1.071;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="2EMGZGDTi3uroBsRNV49-1" source="2EMGZGDTi3uroBsRNV49-106" target="2EMGZGDTi3uroBsRNV49-107">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1710" y="790" as="sourcePoint" />
+            <mxPoint x="1870" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-112" value="&lt;span style=&quot;font-weight: 700 ; white-space: nowrap&quot;&gt;H323EndPoint&lt;/span&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-1">
+          <mxGeometry x="1110" y="520" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="2EMGZGDTi3uroBsRNV49-114" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-112">
+          <mxGeometry x="45" y="93" width="10" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
