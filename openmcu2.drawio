@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-26T09:57:54.122Z" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="85BcFSya3eYnftK80_ng" version="12.7.6" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-26T10:18:28.538Z" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="MQszu6H-blXQRcYX_2zS" version="12.7.6" type="github" pages="2">
   <diagram name="Notify" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="1715" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -1179,7 +1179,7 @@
         <mxCell id="6LYUDMdmk5QRlF6ggCRH-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="6LYUDMdmk5QRlF6ggCRH-10">
           <mxGeometry y="90" width="270" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="6LYUDMdmk5QRlF6ggCRH-13" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6LYUDMdmk5QRlF6ggCRH-10">
+        <mxCell id="6LYUDMdmk5QRlF6ggCRH-13" value="+ Conference *MakeConferenceWithLock(...)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6LYUDMdmk5QRlF6ggCRH-10">
           <mxGeometry y="98" width="270" height="26" as="geometry" />
         </mxCell>
         <mxCell id="6LYUDMdmk5QRlF6ggCRH-15" value="ConferenceMonitor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-1">
@@ -1476,6 +1476,11 @@
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
             <mxPoint x="3430" y="1140" as="sourcePoint" />
             <mxPoint x="3590" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6LYUDMdmk5QRlF6ggCRH-125" value="n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="6LYUDMdmk5QRlF6ggCRH-102">
+          <mxGeometry x="0.3328" y="-3" relative="1" as="geometry">
+            <mxPoint x="13.92" y="-12" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="6LYUDMdmk5QRlF6ggCRH-103" value="MCUSimpleVideoMixer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="2EMGZGDTi3uroBsRNV49-1">
